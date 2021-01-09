@@ -4,8 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cs</title>
+
+    <style>
+      /* awesome reset :) */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        font-family: monospace;
+      }
+
+      body {
+        background-color: #333333;
+        color: #F2F2F2;
+      }
+
+      #code-techtree-generating {
+        color: #F15D22;
+      }
+
+      .generating::before {
+	content: "generating: ";
+      }
+
+
+      .generating::after {
+	content: "/second"
+      }
+
+      .level {
+        color: #C4A000 ;
+      }
+
+      .level::before {
+	content: "level:";
+      }
+
+	
+
+
+/*   
+bold: #73C48F
+
+cursor color text: #49B9C7 | cursor color background: #F6F6F6
+
+highlight color text: #FFFFFF | highlight color background: #48B9C7
+
+palette colors:
+
+0: #333333 1: #CC0000 2: #4E9A06 3: #C4A000 4: #3465A4 5: #75507B 6: #06989A 7: #D3D7CF
+
+8: #88807C 9: #F15D22 10: #73C48F 11: #FFCE51 12: #48B9C7 13: #AD7FA8 14: #34E2E2 15: #EEEEEC
+*/
+
+    </style>
 </head>
 <body>
-    <script src="index.js"></script>
+<h1>cs</h1>
+<!-- starting with our structure -->
+
+<div id="main-techtree" class="techtree">
+  <div id="code-techtree" class="techtree">
+    <header>
+      <h2>code</h2>
+      <div class="kpi">
+        <div id="code-techtree-generating" class="generating second"  >
+          1
+        </div>
+        <div id="code-techtree-level" class="level">
+          1
+        </div>
+      </div>
+    </header>
+    <div class="upgrades">
+      <div class="upgrade">
+        <header>
+          code monkey
+        </header>
+        <div class="description">
+          
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="index.js"></script>
 </body>
 </html>
